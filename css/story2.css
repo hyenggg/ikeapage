@@ -1,0 +1,391 @@
+@import url(layout.css);
+
+
+
+/* main */
+
+#pd_sub1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url(../image/ikea_news.png) center center/cover fixed;
+}
+
+.main_text{
+  width: 1200px;
+  height: 280px;
+}
+
+.main_text h4{
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.main_text p{
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* button */
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container{
+  width: 1200px;
+  height: 1880px;
+}
+
+.pd_smenu{
+  height: 100px;
+  padding: 40px 0;
+}
+
+.pd_smenu ul{
+  display: flex;
+  justify-content: center;
+}
+
+.pd_smenu ul li a{
+  display: block;
+	width: 200px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid #237ED5;
+	border-radius: 25px;
+	margin: 10px 15px;
+	color: #333;
+  font-weight: 500;
+	transition: 0.35s;
+}
+
+.pd_smenu ul li a:not(.active):hover{
+	background-color: #45d4ff;
+	color: #fff;
+	border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+.pd_smenu ul li a.active{
+	background-color: #237ED5;
+	color: #fff;
+	border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+
+/* 뉴스룸 */
+
+.ikea_news{
+  width: 1200px;
+  height: 1600px;
+}
+
+.ikea_news h2{
+  font-size: 33px;
+  color: #333;
+  font-weight: 600;
+  padding: 40px 0 0 0;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.ikea_news h3{
+  margin-top: -20px;
+  margin-bottom: 40px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 25px;
+  color: #333;
+}
+
+.news_all{
+  width: 1200px;
+}
+
+.news_list1{
+  width: 1200px;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.news_list1 img{
+  width: 385px;
+  height: 385px;
+}
+
+.news1{
+  width: 385px;
+  height: 385px;
+  position: relative;
+  margin-right: 25px;
+  margin-left: 25px;
+  overflow: hidden;
+}
+
+.news2{
+  width: 385px;
+  height: 385px;
+  position: relative;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.news3{
+  width: 385px;
+  height: 385px;
+  position: relative;
+  margin-right: 25px;
+  overflow: hidden;
+}
+
+.news_content{
+  position: absolute;
+  top: 300px;
+  left: 0;
+  width: inherit;
+  height:280px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  background-color: #237ED5;
+  padding: 30px;
+}
+
+.news_content h4{
+  font-size: 19px;
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.news_content p{
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.news_content h5{
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.news_content span{
+  font-size: 13px;
+  font-weight: 500;
+  color: #237ED5;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 3px 8px;
+  margin-right: 10px;
+}
+
+.news_content em{
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  color: #237ED5;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 3px 8px;
+}
+
+.news1:hover .news_content,
+.news2:hover .news_content,
+.news3:hover .news_content{
+  transform: translateY(-170px);
+}
+
+/* 뉴스 밑줄(4~6) */
+
+.news_list2{
+  width: 1200px;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.news_list2 img{
+  width: 385px;
+  height: 385px;
+}
+
+.news4{
+  width: 385px;
+  height: 385px;
+  position: relative;
+  margin-right: 25px;
+  margin-left: 25px;
+  overflow: hidden;
+}
+
+.news5{
+  width: 385px;
+  height: 385px;
+  position: relative;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.news6{
+  width: 385px;
+  height: 385px;
+  position: relative;
+  margin-right: 25px;
+  overflow: hidden;
+}
+
+.news_content2{
+  position: absolute;
+  top: 300px;
+  left: 0;
+  width: inherit;
+  height:280px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  background-color: #237ED5;
+  padding: 30px;
+}
+
+.news_content2 h4{
+  font-size: 19px;
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.news_content2 p{
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.news_content2 h5{
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.news_content2 span{
+  font-size: 13px;
+  font-weight: 500;
+  color: #237ED5;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 3px 8px;
+  margin-right: 10px;
+}
+
+.news_content2 em{
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  color: #237ED5;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 3px 8px;
+}
+
+.news4:hover .news_content2,
+.news5:hover .news_content2,
+.news6:hover .news_content2{
+  transform: translateY(-180px);
+}
+
+
+/* 신청하기 */
+
+.interior_sv{
+  margin-top: 20px;
+  width: 1200px;
+  height: 480px;
+} 
+
+.interior_sv h2{
+  font-size: 33px;
+  color: #333;
+  font-weight: 600;
+  padding: 40px 0 0 0;
+  margin-left: 125px;
+  margin-bottom: 25px;
+}
+
+.in_sv{
+  display: flex;
+  margin-left: 130px;
+}
+
+.in_img{
+  width: 440px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.in_img img{
+  width: 440px;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.in_img:hover img{transform: scale(1.1)}
+
+.online{
+  margin-right: 50px;
+  box-shadow: 6px 6px 18px #ebebeb,
+  -6px -6px 18px #ffffffce;
+  padding-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
+.offline{
+  box-shadow: 6px 6px 18px #ebebeb,
+  -6px -6px 18px #ffffffce;
+  padding-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
+.online p,
+.offline p{
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 30px;
+  padding: 12px 50px;
+  border: 1px solid #237ED5;
+  border-radius: 25px;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.35s;
+  color: #333;
+}
+
+.online p:hover,
+.offline p:hover{
+  background-color: #237ED5;
+  color: #fff;
+  cursor: pointer;
+}
+

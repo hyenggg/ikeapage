@@ -1,0 +1,282 @@
+@import url(layout.css);
+
+
+
+/* main */
+
+#pd_sub1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url(../image/service.png) center center/cover fixed;
+}
+
+.main_text{
+  width: 1200px;
+  height: 280px;
+}
+
+.main_text h4{
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.main_text p{
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* button */
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container{
+  width: 1200px;
+  height: 1680px;
+}
+
+.pd_smenu{
+  height: 100px;
+  padding: 40px 0;
+}
+
+.pd_smenu ul{
+  display: flex;
+  justify-content: center;
+}
+
+.pd_smenu ul li a{
+  display: block;
+	width: 200px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid #237ED5;
+	border-radius: 25px;
+	margin: 10px 15px;
+	color: #333;
+  font-weight: 500;
+	transition: 0.35s;
+}
+
+.pd_smenu ul li a:not(.active):hover{
+	background-color: #45d4ff;
+	color: #fff;
+	border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+.pd_smenu ul li a.active{
+	background-color: #237ED5;
+	color: #fff;
+	border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+/* h2 */
+
+h2{
+  font-size: 33px;
+  color: #333;
+  font-weight: 600;
+  padding: 40px 0 0 0;
+  margin-left: 130px;
+  margin-bottom: 25px;
+}
+
+/* 조립 서비스 */
+
+
+.service h3{
+  margin-top: -20px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 130px;
+  color: #333;
+}
+
+.service{
+  width: 1200px;
+  height: 1350px;
+}
+
+.accordion{margin-left: 130px;}
+
+.accordion .title,
+.accordion .content {
+  width: 900px;
+  background-color: #ffffff;
+  border: 1px solid #333;
+  padding: 20px 15px;
+  margin-bottom: 10px;
+}
+
+.accordion .title{
+  color: #333;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.accordion p{
+  line-height: 32px;
+}
+
+.accordion .content span{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.accordion .title {cursor: pointer;}
+.accordion .title:after {
+  content: '\f105';
+  font-family: fontawesome;
+  float: right;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+.accordion .title.act:after {transform: rotate(90deg);}
+.accordion .title.act {
+  background-color: #237ED5;
+  color: #fff;
+}
+.accordion .content {display: none;}
+.accordion .content.act{display: block;} 
+
+/* 서비스 신청 */
+
+.service_form{
+  margin-top: 100px;
+  width: 1200px;
+  height: 900px;
+}
+
+.form{
+  display: flex;
+}
+
+.sv_image{
+  width: 500px;
+  height: 700px;
+  margin-left: 120px;
+  overflow: hidden;
+}
+
+.sv_image img{
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.sv_image:hover img{transform: scale(1.1);}
+
+.form_all{
+  margin-left: 50px;
+  padding: 15px 40px 20px 40px;
+  width: 500px;
+}
+
+.form_all b{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form_all input{
+  padding: 10px 50px;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  border: none;
+}
+
+.form_all select{
+  padding: 10px 50px;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  border: none;
+}
+
+.form_all textarea{
+  padding: 10px 50px;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  border: none;
+}
+
+.form1{display: flex;}
+.form1 input{padding: 10px 15px;}
+.form2{margin-left: 20px;}
+
+.form2 select{
+  padding: 11px 15px 11px 10px;
+}
+
+.date input{padding: 10px 15px 10px 15px;}
+
+.mail input{
+  margin-right: 30px;
+  padding: 10px 15px;
+}
+
+.mail span{
+  display: inline-block;
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+.mail select{padding: 10px 15px;}
+
+.address input{padding: 10px 10px 10px 15px;}
+
+.faq textarea{
+  width: 330px;
+  height: 200px;
+  padding: 10px 10px 10px 15px;
+}
+
+.form div :is(input[type=text],input[type=email],input[type=password],textarea):focus::placeholder{opacity: 0;}
+
+.form div :is(input[type=text],input[type=email],input[type=password],textarea)::placeholder{
+  color: #ff8c8c;
+  font-size: 13px;
+}
+
+.form div :is(input[type=text],input[type=email],input[type=password],select,textarea):focus{outline: none;}
+
+.form_all p{
+  margin-top: 25px;
+  display: inline-block;
+  padding: 8px 45px;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #333;
+	border: 1px solid #237ED5;
+  outline: none;
+  transition: 0.35s;
+}
+
+.form_all p:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #237ED5;
+}

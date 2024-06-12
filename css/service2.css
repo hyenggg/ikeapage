@@ -1,0 +1,356 @@
+@import url(layout.css);
+
+
+
+/* main */
+
+#pd_sub1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url(../image/interior.png) center center/cover fixed;
+}
+
+.main_text{
+  width: 1200px;
+  height: 280px;
+}
+
+.main_text h4{
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.main_text p{
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* button */
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container{
+  width: 1200px;
+  height: 2000px;
+}
+
+.pd_smenu{
+  height: 100px;
+  padding: 40px 0;
+}
+
+.pd_smenu ul{
+  display: flex;
+  justify-content: center;
+}
+
+.pd_smenu ul li a{
+  display: block;
+	width: 200px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid #237ED5;
+	border-radius: 25px;
+	margin: 10px 15px;
+	color: #333;
+  font-weight: 500;
+	transition: 0.35s;
+}
+
+.pd_smenu ul li a:not(.active):hover{
+	background-color: #45d4ff;
+	color: #fff;
+	border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+.pd_smenu ul li a.active{
+	background-color: #237ED5;
+	color: #fff;
+	border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+/* h2 */
+
+h2{
+  font-size: 33px;
+  color: #333;
+  font-weight: 600;
+  padding: 40px 0 0 0;
+  margin-left: 130px;
+  margin-bottom: 25px;
+}
+
+/* 조립 서비스 */
+
+
+.service h3{
+  margin-top: -20px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 130px;
+  color: #333;
+}
+
+.service{
+  width: 1200px;
+  height: 1350px;
+}
+
+.accordion{margin-left: 130px;}
+
+.accordion .title,
+.accordion .content {
+  width: 900px;
+  background-color: #ffffff;
+  border: 1px solid #333;
+  padding: 20px 15px;
+  margin-bottom: 10px;
+}
+
+.accordion .title{
+  color: #333;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.accordion p{
+  line-height: 32px;
+}
+
+.accordion .content span{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.accordion .content em{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.accordion .title {cursor: pointer;}
+.accordion .title:after {
+  content: '\f105';
+  font-family: fontawesome;
+  float: right;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+.accordion .title.act:after {transform: rotate(90deg);}
+.accordion .title.act {
+  background-color: #237ED5;
+  color: #fff;
+}
+.accordion .content {display: none;}
+.accordion .content.act{display: block;} 
+
+/* 인테리어 과정 */
+
+.interior{
+  width: 1200px;
+  height: 730px;
+  margin-top: 80px;
+}
+
+.interior_text{
+  margin-top: 40px;
+  margin-left: 140px;
+  width: 940px;
+  height: 650px;
+}
+
+.in_text1{
+  display: flex;
+  position: relative;
+}
+
+.in_text1 span{
+  display: block;
+  font-size: 17px;
+  color: #333;
+}
+
+.in_text1 i{
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 60px;
+  text-align: center;
+  font-size: 65px;
+  margin-right: 130px;
+  color: #d2d2d2;
+  transition: 0.55s;
+}
+
+.in_text1 p:before{
+  position: absolute;
+  content: '\f105';
+  font-family: fontawesome;
+  top: 80px;
+  margin-left: 240px;
+  font-size: 40px;
+  color: #333;
+}
+
+.in_text1 span{
+  text-align: center;
+  margin-left: -120px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.in_text2{
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+}
+
+.in_text2 span{
+  display: block;
+  font-size: 17px;
+}
+
+.in_text2 i{
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 60px;
+  text-align: center;
+  font-size: 65px;
+  margin-right: 130px;
+  color: #d2d2d2;
+  transition: 0.55s;
+}
+
+.in_text2 p:nth-last-of-type(3):before,
+.in_text2 p:nth-last-of-type(2):before{
+  position: absolute;
+  content: '\f105';
+  font-family: fontawesome;
+  top: 80px;
+  margin-left: 240px;
+  font-size: 40px;
+  color: #333;
+}
+
+
+.in_text2 span{
+  text-align: center;
+  margin-left: -120px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.in_text1 p i:hover{
+  border-color: #237ED5;
+  color: #237ED5;
+  transform: rotateY(360deg);
+}
+
+.in_text2 p i:hover{
+  border-color: #237ED5;
+  color: #237ED5;
+  transform: rotateY(360deg);
+}
+
+/* 신청하기 */
+
+.interior_sv{
+  margin-top: 20px;
+  width: 1200px;
+  height: 480px;
+} 
+
+.interior_sv h2{margin-bottom: 25px;}
+
+.in_sv{
+  display: flex;
+  margin-left: 130px;
+}
+
+.in_img{
+  width: 440px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.in_img img{
+  width: 440px;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.in_img:hover img{transform: scale(1.1)}
+
+.online{
+  margin-right: 50px;
+  box-shadow: 6px 6px 18px #ebebeb,
+  -6px -6px 18px #ffffffce;
+  padding-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
+.offline{
+  box-shadow: 6px 6px 18px #ebebeb,
+  -6px -6px 18px #ffffffce;
+  padding-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
+.online p,
+.offline p{
+  display: inline-block;
+  margin-left: 25%;
+  margin-top: 30px;
+  padding: 12px 50px;
+  border: 1px solid #237ED5;
+  border-radius: 25px;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.35s;
+  color: #333;
+}
+
+.online p:hover,
+.offline p:hover{
+  background-color: #237ED5;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+

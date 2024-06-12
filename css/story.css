@@ -1,0 +1,189 @@
+@import url(layout.css);
+
+
+
+/* main */
+
+#pd_sub1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url(../image/ikeastory.png) center center/cover fixed;
+}
+
+.main_text{
+  width: 1200px;
+  height: 280px;
+}
+
+.main_text h4{
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.main_text p{
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* button */
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container{
+  width: 1200px;
+  height: 2350px;
+}
+
+.pd_smenu{
+  height: 100px;
+  padding: 40px 0;
+}
+
+.pd_smenu ul{
+  display: flex;
+  justify-content: center;
+}
+
+.pd_smenu ul li a{
+  display: block;
+	width: 200px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid #237ED5;
+	border-radius: 25px;
+	margin: 10px 15px;
+	color: #333;
+  font-weight: 500;
+	transition: 0.35s;
+}
+
+.pd_smenu ul li a:not(.active):hover{
+	background-color: #45d4ff;
+	color: #fff;
+	border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+.pd_smenu ul li a.active{
+	background-color: #237ED5;
+	color: #fff;
+	border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+/* h2 */
+
+h2{
+  font-size: 33px;
+  color: #333;
+  font-weight: 600;
+  padding: 40px 0 0 0;
+  margin-left: 130px;
+  margin-bottom: 25px;
+}
+
+.ikea_story{
+  width: 1200px;
+  height: 2100px;
+}
+
+.ikea_story h3{
+  margin-top: -20px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 130px;
+  color: #333;
+}
+
+.vision{
+  margin-left: 70px;
+  display: flex;
+  margin-top: 60px;
+}
+
+.vision img{
+  width: 550px;
+  margin-top: 30px;
+}
+
+.ikea_text h4{
+  font-size: 30px;
+  margin-top: 500px;
+  color: #333;
+}
+
+.ikea_text b{
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.ikea_text em{
+  display: block;
+  font-style: normal;
+  font-size: 16px;
+  margin-top: 8px;
+  line-height: 24px;
+  color: #333;
+}
+
+.ikea_img{
+  width: 520px;
+  height: 900px;
+  background: url(../image/ikea_story.png) center center/cover;
+  transition: 0.5s;
+}
+
+.ikea_text2{
+  width: 500px;
+  background-color: #efefef;
+  padding: 50px;
+}
+
+.ikea_text2 h4{
+  font-size: 30px;
+  margin-top: 540px;
+  color: #333;
+}
+
+.ikea_text2 b{
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.ikea_text2 em{
+  display: block;
+  font-style: normal;
+  font-size: 15px;
+  margin-top: 8px;
+  line-height: 24px;
+  color: #333;
+}
+
+.ikea_img:hover{
+  background: url(../image/ikea_story2.png) center center/cover;
+}
+
+
+
+
